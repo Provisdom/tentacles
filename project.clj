@@ -1,11 +1,18 @@
-(defproject tentacles "0.5.1"
-  :description "A library for working with the Github API."
-  :url "https://github.com/Raynes/tentacles"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [clj-http "1.0.1"]
-                 [cheshire "5.4.0"]
-                 [com.cemerick/url "0.1.1"]
-                 [org.clojure/data.codec "0.1.0"]
-                 [environ "1.0.0"]])
+(defproject
+  tentacles
+  "0.6.0"
+  :dependencies
+  [[org.clojure/clojure "1.8.0"]
+   [provisdom/boot-tasks
+    "0.4.2"
+    :scope
+    "test"
+    :exclusions
+    [commons-codec]]
+   [clj-http "2.1.0"]
+   [cheshire "5.5.0"]
+   [com.cemerick/url "0.1.1"]
+   [org.clojure/data.codec "0.1.0"]
+   [environ "1.0.2"]]
+  :source-paths
+  ["src"])
